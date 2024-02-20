@@ -9,7 +9,10 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
+
+/* Common */
 
 h1,
 h2,
@@ -20,10 +23,80 @@ h6 {
     font-family: "Sora", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 input,
 select,
 textarea,
 button {
     font-family: inherit;
     font-size: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --line-height: 50px;
+    display: inline-block;
+    padding: 0 16px;
+    color: #000958;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: calc(var(--line-height) - 2px);
+    min-width: 117px;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid #000958;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.header-action--link,
+.navbar__link {
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link.active {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action--link:hover {
+    color: #000958;
+    /* text-shadow: 1px 0 0 currentColor; */
 }
