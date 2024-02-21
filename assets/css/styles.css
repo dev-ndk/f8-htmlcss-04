@@ -223,6 +223,7 @@ button {
     width: 222px;
     height: 2px;
     background: #f2f2f2;
+    border-radius: 99px;
     margin: 20px 0;
 }
 
