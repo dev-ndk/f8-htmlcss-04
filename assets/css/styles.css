@@ -638,9 +638,7 @@ button {
     content: "";
     display: inline-block;
     width: 2px;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0 auto 0 0;
     border-radius: 99px;
     background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
 }
