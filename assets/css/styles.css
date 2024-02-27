@@ -749,19 +749,25 @@ button {
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 266px;
+    height: 94%;
     border-radius: inherit;
 }
 
 .staff-item__img-wrap::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 
 .staff-item:nth-child(1) .staff-item__img-wrap::after {
-    content: url(../icon/staff-decor-1.svg);
+    background-image: url(../icon/staff-decor-1.svg);
 }
 
 .staff-item:nth-child(1) .staff-item__img-wrap::before {
@@ -769,7 +775,7 @@ button {
 }
 
 .staff-item:nth-child(2) .staff-item__img-wrap::after {
-    content: url(../icon/staff-decor-2.svg);
+    background-image: url(../icon/staff-decor-2.svg);
 }
 
 .staff-item:nth-child(2) .staff-item__img-wrap::before {
@@ -777,7 +783,7 @@ button {
 }
 
 .staff-item:nth-child(3) .staff-item__img-wrap::after {
-    content: url(../icon/staff-decor-3.svg);
+    background-image: url(../icon/staff-decor-3.svg);
 }
 
 .staff-item:nth-child(3) .staff-item__img-wrap::before {
@@ -785,7 +791,7 @@ button {
 }
 
 .staff-item:nth-child(4) .staff-item__img-wrap::after {
-    content: url(../icon/staff-decor-4.svg);
+    background-image: url(../icon/staff-decor-4.svg);
 }
 
 .staff-item:nth-child(4) .staff-item__img-wrap::before {
@@ -793,8 +799,7 @@ button {
 }
 
 .staff-item:nth-child(even) .staff-item__img-wrap::after {
-    bottom: initial;
-    top: 5%;
+    background-position: 0 5%;
 }
 
 .staff-item__img {
