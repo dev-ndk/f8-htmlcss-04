@@ -799,7 +799,7 @@ button {
 }
 
 .staff-item:nth-child(even) .staff-item__img-wrap::after {
-    background-position: 0 5%;
+    background-position: 0 10%;
 }
 
 .staff-item__img {
