@@ -1234,16 +1234,22 @@ button {
 /* Footer */
 
 .footer {
-    background: #fff6ed;
+    background: linear-gradient(to right, #fff6ed 43%, transparent 43%);
     margin-top: 65px;
 }
 
 .footer__inner {
     display: flex;
+    align-items: center;
 }
 
 .footer__left {
-    padding: 114px 0 148px 0;
+    width: 42%;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 52px 130px;
 }
 
 .search-form {
@@ -1321,4 +1327,42 @@ button {
 .search-form__submit:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 58px 137px;
+}
+
+.footer__heading-right {
+    color: #000958;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11; /* 111.111% */
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__Copyright {
+    text-align: center;
+    color: #656689;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16; /* 116.667% */
+    opacity: 0.5;
+    padding-bottom: 48px;
 }
